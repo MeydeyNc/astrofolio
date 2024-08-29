@@ -1,5 +1,5 @@
 ---
-
+const pageTitle = "Bienvenue sur mon Astrofolio";
 ---
 
 <html lang="fr">
@@ -8,14 +8,14 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Médéric Marquié</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
 		<a href="/about"> A propos de moi</a>
 		<a href="/cv"> Mon CV</a>
 		<a href="/rapport"> Rapport de stage</a>
 
-		<h1>Bienvenue sur mon Astrofolio</h1>
+		<h1>{pageTitle}</h1>
 
 		<p> Vous pourrez ici retrouver nombres d'informations sur ma personne.</p>
 	</body>
