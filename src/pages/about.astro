@@ -1,13 +1,21 @@
-<header>
-    <title>A propos de moi</title>
-</header>
+---
+const pageTitle = "A propos de moi";
+---
+
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{pageTitle}</title>
+</head>
 
 <body>
     <a href="/">Accueil</a>
     <a href="/cv">Mon CV</a>
+    <a href="/rapport">Rapport de stage</a>
 
 
-    <h1>A propos de moi</h1>
+    <h1>{pageTitle}</h1>
     <h2> ... et de ce site !</h2>
     <p>Je suis un jeune developpeur en formation chez Ynov Bordeaux.</p>
     <p>Actuellement en B3 Informatique je cherche a me former dans l'infrastructure systemes et reseaux.</p>
