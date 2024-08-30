@@ -1,28 +1,11 @@
 ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/global.css";
 const pageTitle = "Mon CV";
 ---
 
-<html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <title>{pageTitle}</title>
-    </head>
+<BaseLayout pageTitle={pageTitle}>
+    <h3>Vous pourrez aussi retrouver mon GitHub.</h3>
 
-    <body>
-        <Header />
-
-        <h1>{pageTitle}</h1>
-
-        <h3>Vous pourrez aussi retrouver mon GitHub.</h3>
-
-        <h3>Ainsi que mon mail professionnel.</h3>
-        <Footer />
-        <script>
-            import "../scripts/menu.js";
-        </script>
-    </body>
-</html>
+    <h3>Ainsi que mon mail professionnel.</h3>
+</BaseLayout>
