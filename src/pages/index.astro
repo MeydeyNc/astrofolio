@@ -1,4 +1,7 @@
 ---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 const pageTitle = "Bienvenue sur mon Astrofolio";
 ---
 
@@ -11,12 +14,33 @@ const pageTitle = "Bienvenue sur mon Astrofolio";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/about"> A propos de moi</a>
-		<a href="/cv"> Mon CV</a>
-		<a href="/rapport"> Rapport de stage</a>
+		<Header />
 
 		<h1>{pageTitle}</h1>
 
-		<p> Vous pourrez ici retrouver nombres d'informations sur ma personne.</p>
+		<h3>Je vous présente mon site Portfolio.</h3>
+		<p>
+			Vous pourrez y trouver quelques informations sur moi, mon CV, mes
+			expériences.
+		</p>
+		<p>
+			Mais également un rapport de stage effectué au sein de l'association
+			Nouvelle Voix.
+		</p>
+
+		<h4>Retrouvez toutes ces informations parmi ces liens :</h4>
+
+		<ul>
+			<a href="/about"> A propos de moi</a>
+			<br />
+			<a href="/cv"> Mon CV</a>
+			<br />
+			<a href="/rapport"> Rapport de stage</a>
+		</ul>
+
+		<Footer />
+		<script>
+			import "../scripts/menu.js";
+		</script>
 	</body>
 </html>

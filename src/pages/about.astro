@@ -1,4 +1,7 @@
 ---
+import '../styles/global.css';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 const pageTitle = "A propos de moi";
 
 const identity = {
@@ -16,14 +19,11 @@ const skills = ["HTML & CSS", "JS", "NextJs", "Golang", "Python", "Astro", "Dock
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{pageTitle}</title>
+    
 </head>
 
 <body>
-    <a href="/">Accueil</a>
-    <a href="/cv">Mon CV</a>
-    <a href="/rapport">Rapport de stage</a>
-
-
+    <Header/>
     <h1>{pageTitle}</h1>
     <h2> ... et de ce site !</h2>
     <p>Je suis {identity.firstname}, je vis en {identity.country}, et je suis un jeune developpeur en formation chez Ynov Bordeaux.</p>
@@ -34,8 +34,8 @@ const skills = ["HTML & CSS", "JS", "NextJs", "Golang", "Python", "Astro", "Dock
     <p>Je souhaite en effet m'interesser dans le futur au Cloud. Et alors pourquoi pas aller vers l'architecture Cloud.</p>
     <p>C'est donc dans une formation en alternance que je compte forger mon savoir et mon experience !</p>
 
-    <p> Pour vous parler un peu de moi, je suis un jeune venant de Nouvelle-Calédonie un petit paradis du bout du monde où j'y ai vécu toute ma vie.</p>
-    <p> J'ai donc décidé de partir en France pour mes études et pour découvrir un peu plus le monde.</p>
+    <p> Pour vous parler un peu de moi, je suis un jeune venant de Nouvelle-Calédonie un petit paradis du bout du monde où j'ai vécu toute ma vie.</p>
+    <p> J'ai donc décidé de partir en France, en 2019, pour mes études et pour découvrir un peu plus le monde.</p>
 
     {identity.hobbies.length > 0 && (
         <div>
@@ -47,4 +47,8 @@ const skills = ["HTML & CSS", "JS", "NextJs", "Golang", "Python", "Astro", "Dock
     )}
 
     <h4> Vous trouverez ainsi sur ce site mon CV et un peu de mon parcours.</h4>
+    <Footer/>
+    <script>
+        import "../scripts/menu.js";
+    </script>
 </body>
